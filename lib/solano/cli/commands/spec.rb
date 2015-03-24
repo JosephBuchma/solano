@@ -94,7 +94,7 @@ module Solano
       end
       exit_failure Text::Error::SCM_REPO_NOT_READY unless suite_details["repoman_current"]
 
-      update_suite_parameters!(suite_details, options[:session_id])
+      #update_suite_parameters!(suite_details, options[:session_id])
 
       start_time = Time.now
 
