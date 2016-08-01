@@ -4,15 +4,17 @@ ruby_version:
    - 'ruby-2.1.5'
    - 'ruby-2.2.2'
    - 'ruby-2.3.0'
+system:
+ session_manager: 'destro_free'
 coverage:
   version: 2
-  enabled: true
+  enabled: false
 bundler_version: 1.10.6
 test_pattern:
-  - features/*.feature
   - spec/**_spec.rb
 test_exclude_pattern:
   - spec/agent_spec.rb
+  - features/*.feature
 tests:
   - bundle exec rspec spec/agent_spec.rb
 cache:
